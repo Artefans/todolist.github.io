@@ -1,3 +1,6 @@
+alert('Баг с удалением// Баг с дубликатами действий')
+
+
 let addMessage = document.querySelector('.message'),
     addButton  = document.querySelector('.add'),
     todo       = document.querySelector('.todo'),
