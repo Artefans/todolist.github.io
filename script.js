@@ -4,7 +4,7 @@ alert('Баг с удалением// Баг с дубликатами дейс�
 let addMessage = document.querySelector('.message'),
     addButton = document.querySelector('.add'),
     todo = document.querySelector('.todo'),
-    dlt = document.querySelector('.dlt');
+    inp = document.querySelector('.inp');
 let todoList = [];
 
 
@@ -35,8 +35,7 @@ function displayMessage() {
     todoList.forEach(function (item, index) {
         displayMessage += `
         <li class='li'>
-        <input type="checkbox" id="item_${index}" class="checkbox" ${item.checked ? 'checked' : ''}>
-        <label for='item_${index}'>${item.todo}</label>
+        <label class='btn' for='item_${index}'>${item.todo}</label>
         </li>
         `;
         todo.innerHTML = displayMessage;
@@ -67,3 +66,8 @@ todo.addEventListener('change', function (e) {
         }
     })
 });
+let inpValue = document.querySelector(".text");
+
+inpValue.addEventListener("input", function() {
+  this.value = this.value[0].toUpperCase() + this.value.slice(1);
+})
