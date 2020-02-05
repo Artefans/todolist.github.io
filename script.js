@@ -69,5 +69,5 @@ todo.addEventListener('change', function (e) {
 let inpValue = document.querySelector(".text");
 
 inpValue.addEventListener("input", function() {
-  this.value = this.value[0].toUpperCase() + this.value.slice(1);
+    this.value = this.value[0].toUpperCase() + this.value.slice(1);
 })
