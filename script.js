@@ -50,7 +50,7 @@ todo.addEventListener('click', function(event) {
         if (item.todo === event.target.innerHTML) {
             let yesNo = confirm('Точно хочешь удалить ?')
             if(yesNo === true) todoList.splice(i, 1);
-            else return
+            else return;
             displayMessage();
         localStorage.setItem('todo', JSON.stringify(todoList));
         }
