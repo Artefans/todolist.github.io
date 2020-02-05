@@ -14,7 +14,7 @@ if(localStorage.getItem('todo')){
 }
 
 addButton.addEventListener('click', function(){
-    if(!addMessage.value) return alert('Ваше действие не может быть пустой струкой, у вас же не лапки !');
+    if(!addMessage.value) return alert('Ваше действие не может быть пустой строчкой, у вас же не лапки !');
     const newTodo = {
         todo: addMessage.value,
         checked: false,
