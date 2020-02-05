@@ -12,9 +12,8 @@ if (localStorage.getItem('todo')) {
     todoList = JSON.parse(localStorage.getItem('todo'));
     displayMessage();
 }
-
-addButton.addEventListener('click', function () {
-    if (!addMessage.value) return alert('Ваше действие не может быть пустой строкой, у вас же не лапки !');
+addButton.addEventListener('click', function(){
+    if(!addMessage.value) return alert('Ваше действие не может быть пустой строкой, у вас же не лапки !');
     const newTodo = {
         todo: addMessage.value,
         checked: false,
